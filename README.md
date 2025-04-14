@@ -1,3 +1,3 @@
-# MuCodeec
+# MuCodec
 
 MuCodec demo page.
