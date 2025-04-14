@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="description"
-        content="MuCodec: Ultra Low-Bitrate Music Codec">
+        content="MuCodec: Ultra Low-Bitrate Music Codec for Music Generation">
   <meta name="keywords" content="Speech Editing, Zero-shot TTS, Neural Codec Language Models">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MuCodec</title>
@@ -41,7 +41,7 @@
     <div class="container  is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title">MuCodec: Ultra Low-Bitrate Music Codec for music generation</h1>
+          <h1 class="title is-1 publication-title">MuCodec: Ultra Low-Bitrate Music Codec for Music Generation</h1>
          
 
 
@@ -99,63 +99,108 @@
   </div>
 </section>
 
-<section id="toc" class="section" style="padding-top: 0px;">
-  <div class="container  is-fluid">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3" style="font-size: 36px;">Table of Contents</h2>
-        <hr>
-        <div class="is-centered">
-          <h2 class="title is-3"><b style="font-size: 32px;">Audio Reconstruction</b></h2>
-          <h3><a href="#music type"><b style="font-size: 24px;">Music Reconscruction</b></a></h3>
-          <ul>
-            <li style="font-size: 20px;"><a href="#Enlish Sample"><b>Enlish Music</b></a></li>
-            <li style="font-size: 20px;"><a href="#Chinese Sample"><b>Chinese Music</b></a></li>
-            <li style="font-size: 20px;"><a href="#Other Language Sample"><b>Other Language Music</b></a></li>
-          </ul>
-          <h3><a href="#other type"><b style="font-size: 24px;">Other Types of Audio Reconscruction (Domain Transfer Capability)</b></a></h3>
-          <ul>
-            <li style="font-size: 20px;"><a href="#music background"><b>Music Background</b></a></li>
-            <li style="font-size: 20px;"><a href="#vocal"><b>Vocal</b></a></li>
-            <li style="font-size: 20px;"><a href="#audio event"><b>Audio Event</b></a></li>
-            <li style="font-size: 20px;"><a href="#English speech"><b>English Speech</b></a></li>
-            <li style="font-size: 20px;"><a href="#Chinese speech"><b>Chinese Speech</b></a></li>
-          </ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table of Contents</title>
+    <style>
+        .content-container {
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background-color: #f0f0f0;
+        }
+        .content-container h2, .content-container h3, .content-container ul {
+            text-align: left; 
+        }
+        .content-container h3, .content-container ul {
+            padding-left: 50px; 
+        }
+        .content-container ul {
+            list-style-type: none;
+            padding-left: 100px; 
+        }
+    </style>
+</head>
+<body>
+  <section id="toc" class="section" style="padding-top: 0px;">
+      <div class="content-container">
+          <h2 class="title is-3" style="font-size: 36px; text-align: center;">Table of Contents</h2>
           <hr>
-          <h2 class="title is-3"><b style="font-size: 32px;">Aid for music generation</b></h2>
-          <h3><a href="#Lyric Sample"><b style="font-size: 24px;">Generated music samples</b></a></h3>
-        </div>
-
+          <div>
+              <h2 class="title is-3"><b style="font-size: 32px;">1. Audio Reconstruction</b></h2>
+              <h3><a href="#music type"><b style="font-size: 24px;">1.1 Music Reconstruction</b></a></h3>
+              <ul>
+                  <li style="font-size: 20px;"><a href="#Enlish Sample"><b>1.1.1 English Music</b></a></li>
+                  <li style="font-size: 20px;"><a href="#Chinese Sample"><b>1.1.2 Chinese Music</b></a></li>
+                  <li style="font-size: 20px;"><a href="#Other Language Sample"><b>1.1.3 Other Language Music</b></a></li>
+              </ul>
+              <h3><a href="#other type"><b style="font-size: 24px;">1.2 Other Types of Audio Reconstruction</b></a></h3>
+              <ul>
+                  <li style="font-size: 20px;"><a href="#music background"><b>1.2.1 Music Background</b></a></li>
+                  <li style="font-size: 20px;"><a href="#vocal"><b>1.2.2 Vocal</b></a></li>
+                  <li style="font-size: 20px;"><a href="#audio event"><b>1.2.3 Audio Event</b></a></li>
+                  <li style="font-size: 20px;"><a href="#Chinese speech"><b>1.2.4 Chinese Speech</b></a></li>
+                  <li style="font-size: 20px;"><a href="#English speech"><b>1.2.5 English Speech</b></a></li>
+              </ul>
+              <hr>
+              <h2 class="title is-3"><b style="font-size: 32px;">2. Aid for Music Generation</b></h2>
+              <h3><a href="#Lyric Sample"><b style="font-size: 24px;">2.1 Generated Music Samples</b></a></h3>
+          </div>
       </div>
-    </div>
+  </section>
+</body>
+</html>
 
-  </div>
-</section>
 
 
-<section id="music type" class="hero is-light ">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Samples</title>
+    <style>
+        .content-box {
+            max-width: 1200px; 
+            margin: 0 auto; 
+            padding: 20px;
+            background-color: #ffffff; 
+            border: 1px solid #ddd; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+    <section id="music type">
+        <div class="hero-body">
+            <div class="container is-fluid">
+                <div class="columns is-centered">
+                    <div class="column is-four-fifths">
+                        <div class="content-box">
+                            <h1 class="title is-3">1.1 Music Reconstruction</h1>
+                            <h4 style="font-size: 24px;">Here we provide samples of music from different languages, including English, Chinese, and other languages. The samples are from YouTube, and the links are provided below each sample.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+
+<section id="Enlish Sample" >
   <div class="hero-body">
     <div class="container is-fluid">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h1 class="title is-3">Music Samples</h1>
-          <h4 style="font-size: 24px;">Here we provide samples of music from different languages, including English, Chinese, and other languages. The samples are from Youtube, and the links are provided below each sample.</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="Enlish Sample" class="hero is-light ">
-  <div class="hero-body">
-    <div class="container is-fluid">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">English Music</h2>
+          <h2 class="title is-3">1.1.1 English Music</h2>
           <div class="content">
-            <p style="font-size: 24px;">Sampled from Youtube, the link has been shown below the sample</a></p> 
+            <p style="font-size: 24px;">Sampled from YouTube, the link has been shown below the sample</a></p> 
           </div>
         </div>
       </div>
@@ -173,16 +218,16 @@
             </tr>
             <tr>
               <th><strong></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=5P3gi_6sYKk">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=4hpMBAqYS8I">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=DQM1r6v8CbI">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=wJq4nK2n9QI">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=nVv9BTDbXbU">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=5P3gi_6sYKk">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=4hpMBAqYS8I">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=DQM1r6v8CbI">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=wJq4nK2n9QI">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=nVv9BTDbXbU">Link</a></strong></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="font-size: 24px;">Origin Audio</td>
+              <td style="font-size: 24px;">Original Audio</td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/1_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/1_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/1_3.mp3" type="audio/wav"></audio></td>
@@ -228,7 +273,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/xcodec/1_5.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (0.35kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (0.35kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/1_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/1_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/1_3.mp3" type="audio/wav"></audio></td>
@@ -267,7 +312,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/wavtokenizer_900/1_5.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (1.33kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (1.33kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/1_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/1_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/1_3.mp3" type="audio/wav"></audio></td>
@@ -289,14 +334,14 @@
   </div>
 </section>
 
-<section id="Chinese Sample" class="hero is-light ">
+<section id="Chinese Sample" >
   <div class="hero-body">
     <div class="container is-fluid">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Chinese Music</h2>
+          <h2 class="title is-3">1.1.2 Chinese Music</h2>
           <div class="content">
-            <p style="font-size: 24px;">Sampled from Youtube, the link has been shown below the sample</a></p> 
+            <p style="font-size: 24px;">Sampled from YouTube, the link has been shown below the sample</a></p> 
           </div>
         </div>
       </div>
@@ -314,16 +359,16 @@
             </tr>
             <tr>
               <th><strong></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=WKYQZ5cHP7E&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU&index=6">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=ql2L1nBvZx0&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=DzCPP0idnyI&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU&index=144">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=DzCPP0idnyI&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU&index=54">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=E23S2GJAdDw&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU&index=25">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=WKYQZ5cHP7E&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU&index=6">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=ql2L1nBvZx0&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=DzCPP0idnyI&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU&index=144">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=DzCPP0idnyI&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU&index=54">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=E23S2GJAdDw&list=PL1njFp_WcyPUGxOZfuF0DiwliYSkP18FU&index=25">Link</a></strong></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="font-size: 24px;">Origin Audio</td>
+              <td style="font-size: 24px;">Original Audio</td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/2_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/2_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/2_3.mp3" type="audio/wav"></audio></td>
@@ -369,7 +414,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/xcodec/2_5.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (0.35kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (0.35kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/2_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/2_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/2_3.mp3" type="audio/wav"></audio></td>
@@ -408,7 +453,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/wavtokenizer_900/2_5.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (1.33kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (1.33kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/2_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/2_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/2_3.mp3" type="audio/wav"></audio></td>
@@ -430,14 +475,14 @@
   </div>
 </section>
 
-<section id="Other Language Sample" class="hero is-light ">
+<section id="Other Language Sample" >
   <div class="hero-body">
     <div class="container is-fluid">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Other Language Music</h2>
+          <h2 class="title is-3">1.1.3 Other Language Music</h2>
           <div class="content">
-            <p style="font-size: 24px;">Sampled from Youtube, the link has been shown below the sample</a></p> 
+            <p style="font-size: 24px;">Sampled from YouTube, the link has been shown below the sample</a></p> 
           </div>
         </div>
       </div>
@@ -454,22 +499,21 @@
             </tr>
             <tr>
               <th><strong></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=eWd4cSUsDHg">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=E33OFVs6uUM&t=14s">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=7IjGjHB4rDo">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=K5KAc5CoCuk">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=eWd4cSUsDHg">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=E33OFVs6uUM&t=14s">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=7IjGjHB4rDo">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=K5KAc5CoCuk">Link</a></strong></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="font-size: 24px;">Origin Audio</td>
+              <td style="font-size: 24px;">Original Audio</td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/5.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/6.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/7.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/8.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td></td>
               <td></td>
               <td colspan="3" style="font-size: 24px;"><strong>low-bitrate scenario (0.35kbps)</strong></td>
               <td></td>              
@@ -504,7 +548,7 @@
             </tr>
             
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (0.35kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (0.35kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/5.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/6.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/7.mp3" type="audio/wav"></audio></td>
@@ -512,7 +556,6 @@
 
             </tr>
             <tr>
-              <td></td>
               <td></td>
               <td colspan="3" style="font-size: 24px;"><strong>high-bitrate scenario (1.33kbps)</strong></td>
               <td></td>              
@@ -539,7 +582,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/wavtokenizer_900/8.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (1.33kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (1.33kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/5.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/6.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/7.mp3" type="audio/wav"></audio></td>
@@ -561,27 +604,34 @@
 </section>
 
 <br>
-<section id="other type" class="hero is-light ">
-  <div class="hero-body">
-    <div class="container is-fluid">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h1 class="title is-3">Other Types of Audio (Domain Transfer Capability)</h1>
-          <h4 style="font-size: 24px;">Please note that MuCodec itself does not target other types of audio, and we have <b>not used any other kind of audio data except Music</b>, only demonstrating the <b>domain transfer capability</b>. We will focus on developing a universal audio codec at ultra low bit rates in our future work.</h4>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section id="music background" class="hero is-light ">
+
+<body>
+  <section id="other type">
+      <div class="hero-body">
+          <div class="container is-fluid">
+              <div class="columns is-centered">
+                  <div class="column is-four-fifths">
+                      <div class="content-box">
+                          <h1 class="title is-3">1.2 Other Types of Audio (Domain Transfer Capability)</h1>
+                          <h4 style="font-size: 24px;">Please note that MuCodec itself does not target other types of audio, and we have <b>not used any other kind of audio data except Music</b>, only demonstrating the <b>domain transfer capability</b>. We will focus on developing a universal audio codec at ultra low bit rates in our future work.</h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</body>
+
+
+<section id="music background" >
   <div class="hero-body">
     <div class="container is-fluid">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Music Background</h2>
+          <h2 class="title is-3">1.2.1 Music Background</h2>
           <div class="content">
-            <p style="font-size: 24px;">Sampled from Youtube, the link has been shown below the sample</a></p> 
+            <p style="font-size: 24px;">Sampled from YouTube, the link has been shown below the sample</a></p> 
           </div>
         </div>
       </div>
@@ -598,16 +648,16 @@
             </tr>
             <tr>
               <th><strong></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=LJJFlgDmc9Q">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=gDPEvq0aRTE">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=fsODGI87Uok">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=SrY7LBvrY4g">Link</a></strong></th>
-              <th style="font-size: 24px;"><strong><a href="https://www.youtube.com/watch?v=m6opeeziJVA">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=LJJFlgDmc9Q">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=gDPEvq0aRTE">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=fsODGI87Uok">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=SrY7LBvrY4g">Link</a></strong></th>
+              <th style="font-size: 24px;"><strong><a href="https://www.YouTube.com/watch?v=m6opeeziJVA">Link</a></strong></th>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td style="font-size: 24px;">Origin Audio</td>
+              <td style="font-size: 24px;">Original Audio</td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/4_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/4_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/4_3.mp3" type="audio/wav"></audio></td>
@@ -653,7 +703,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/xcodec/4_5.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (0.35kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (0.35kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/4_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/4_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/4_3.mp3" type="audio/wav"></audio></td>
@@ -692,7 +742,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/wavtokenizer_900/4_5.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (1.33kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (1.33kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/4_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/4_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/4_3.mp3" type="audio/wav"></audio></td>
@@ -714,12 +764,12 @@
   </div>
 </section>
 
-<section id="vocal" class="hero is-light ">
+<section id="vocal" >
   <div class="hero-body">
     <div class="container is-fluid">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Vocal</h2>
+          <h2 class="title is-3">1.2.2 Vocal</h2>
           <div class="content">
             <p style="font-size: 24px;">Sampled from Opencpop dataset</a></p> 
           </div>
@@ -739,7 +789,7 @@
           </thead>
           <tbody>
             <tr>
-              <td style="font-size: 24px;">Origin Audio</td>
+              <td style="font-size: 24px;">Original Audio</td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/3_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/3_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/3_3.mp3" type="audio/wav"></audio></td>
@@ -786,7 +836,7 @@
             </tr>
             
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (0.35kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (0.35kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/3_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/3_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/3_3.mp3" type="audio/wav"></audio></td>
@@ -825,7 +875,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/wavtokenizer_900/3_5.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (1.33kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (1.33kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/3_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/3_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/3_3.mp3" type="audio/wav"></audio></td>
@@ -847,12 +897,12 @@
   </div>
 </section>
 
-<section id="audio event" class="hero is-light ">
+<section id="audio event" >
   <div class="hero-body">
     <div class="container is-fluid">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Audio Event</h2>
+          <h2 class="title is-3">1.2.3 Audio Event</h2>
           <div class="content">
             <p style="font-size: 24px;">Sampled from AudioSet</a></p> 
           </div>
@@ -870,13 +920,12 @@
           </thead>
           <tbody>
             <tr>
-              <td style="font-size: 24px;">Origin Audio</td>
+              <td style="font-size: 24px;">Original Audio</td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/9_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/9_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/9_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td></td>
               <td></td>
               <td colspan="3" style="font-size: 24px;"><strong>low-bitrate scenario (0.35kbps)</strong></td>
               <td></td>              
@@ -906,14 +955,13 @@
               <td><audio controls=""><source src="static/audio_sample/demo/xcodec/9_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (0.35kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (0.35kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/9_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/9_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/9_3.mp3" type="audio/wav"></audio></td>
 
             </tr>
             <tr>
-              <td></td>
               <td></td>
               <td colspan="3" style="font-size: 24px;"><strong>high-bitrate scenario (1.33kbps)</strong></td>
               <td></td>              
@@ -937,7 +985,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/wavtokenizer_900/9_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (1.33kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (1.33kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/9_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/9_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/9_3.mp3" type="audio/wav"></audio></td>
@@ -958,12 +1006,12 @@
 </section>
 
 
-<section id="Chinese speech" class="hero is-light ">
+<section id="Chinese speech" >
   <div class="hero-body">
     <div class="container is-fluid">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Chinese Speech</h2>
+          <h2 class="title is-3">1.2.4 Chinese Speech</h2>
           <div class="content">
             <p style="font-size: 24px;">Sampled from THCHS-30</a></p> 
           </div>
@@ -981,16 +1029,14 @@
           </thead>
           <tbody>
             <tr>
-              <td style="font-size: 24px;">Origin Audio</td>
+              <td style="font-size: 24px;">Original Audio</td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/10_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/10_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/10_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
               <td></td>
-              <td></td>
               <td colspan="3" style="font-size: 24px;"><strong>low-bitrate scenario (0.35kbps)</strong></td>
-              <td></td>              
             </tr>
             <tr>
               <td style="font-size: 24px;">GAN-based (0.35kbps)</td>
@@ -1017,14 +1063,13 @@
               <td><audio controls=""><source src="static/audio_sample/demo/xcodec/10_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (0.35kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (0.35kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/10_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/10_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/10_3.mp3" type="audio/wav"></audio></td>
 
             </tr>
             <tr>
-              <td></td>
               <td></td>
               <td colspan="3" style="font-size: 24px;"><strong>high-bitrate scenario (1.33kbps)</strong></td>
               <td></td>              
@@ -1048,7 +1093,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/wavtokenizer_900/10_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (1.33kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (1.33kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/10_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/10_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/10_3.mp3" type="audio/wav"></audio></td>
@@ -1068,12 +1113,12 @@
   </div>
 </section>
 
-<section id="English speech" class="hero is-light ">
+<section id="English speech" >
   <div class="hero-body">
     <div class="container is-fluid">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">English Speech</h2>
+          <h2 class="title is-3">1.2.5 English Speech</h2>
           <div class="content">
             <p style="font-size: 24px;">Sampled from Librispeech</a></p> 
           </div>
@@ -1091,13 +1136,12 @@
           </thead>
           <tbody>
             <tr>
-              <td style="font-size: 24px;">Origin Audio</td>
+              <td style="font-size: 24px;">Original Audio</td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/11_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/11_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/demo_wav/11_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td></td>
               <td></td>
               <td colspan="3" style="font-size: 24px;"><strong>low-bitrate scenario (0.35kbps)</strong></td>
               <td></td>              
@@ -1127,14 +1171,13 @@
               <td><audio controls=""><source src="static/audio_sample/demo/xcodec/11_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (0.35kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (0.35kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/11_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/11_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x1_7_demo/11_3.mp3" type="audio/wav"></audio></td>
 
             </tr>
             <tr>
-              <td></td>
               <td></td>
               <td colspan="3" style="font-size: 24px;"><strong>high-bitrate scenario (1.33kbps)</strong></td>
               <td></td>              
@@ -1158,7 +1201,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/wavtokenizer_900/11_3.mp3" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec-proposed (1.33kbps)</td>
+              <td style="font-size: 24px;"><strong>MuCodec-proposed (1.33kbps)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/11_1.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/11_2.mp3" type="audio/wav"></audio></td>
               <td><audio controls=""><source src="static/audio_sample/demo/mucodec_1x4_7_demo/11_3.mp3" type="audio/wav"></audio></td>
@@ -1181,17 +1224,26 @@
 <br>
 
 
-<section id="Lyric Sample" class="hero is-light">
+<body>
+  <section id="Lyric Sample">
+      <div class="hero-body">
+          <div class="container is-fluid">
+              <div class="columns is-centered">
+                  <div class="column is-four-fifths">
+                      <div class="content-box">
+                          <h1 class="title is-3">2.1 Generated music samples</h1>
+                          <h4 style="font-size: 24px;">To evaluate MuCodec's role in LLM-based music generation, we trained a 1.5B LLaMA-structured model to predict discrete tokens from lyrics, then reconstructed audio using the codec. For comparison, we also benchmarked two state-of-the-art codecs (XCodec and WavTokenizer, both single-codebook) by training identical architecture language models on their discrete tokens of music from the same dataset. Below we present three generated song clips using identical inputs and consistent sampling methods across all codecs.</h4>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+</body>
+
+<section>
   <div class="hero-body">
     <div class="container is-fluid">
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Generated music samples</h2>
-          <div class="content">
-            <p style="font-size: 24px;">To evaluate MuCodec's role in LLM-based music generation, we trained a 1.5B LLaMA-structured model to predict discrete tokens from lyrics, then reconstructed audio using the codec. For comparison, we also benchmarked two state-of-the-art codecs (XCodec and WavTokenizer, both single-codebook) by training identical architecture language models on their discrete tokens of music from the same dataset. Below we present three generated song clips using identical inputs and consistent sampling methods across all codecs.</p>
-          </div>
-        </div>
-      </div>
       <div class="columns is-centered has-text-centered">
         <table class="table" style="background-color: transparent;">
           <thead>
@@ -1220,7 +1272,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/music_gen/xcodec/1.flac" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec (25Hz)</td>
+              <td style="font-size: 24px;"><strong>MuCodec (25Hz)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/music_gen/mucodec/1.flac" type="audio/wav"></audio></td>
             </tr>
             <!-- Lyric 2 -->
@@ -1246,7 +1298,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/music_gen/xcodec/2.flac" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec (25Hz)</td>
+              <td style="font-size: 24px;"><strong>MuCodec (25Hz)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/music_gen/mucodec/2.flac" type="audio/wav"></audio></td>
             </tr>
             <!-- Lyric 3 -->
@@ -1272,7 +1324,7 @@
               <td><audio controls=""><source src="static/audio_sample/demo/music_gen/xcodec/3.flac" type="audio/wav"></audio></td>
             </tr>
             <tr>
-              <td style="font-size: 24px;">MuCodec (25Hz)</td>
+              <td style="font-size: 24px;"><strong>MuCodec (25Hz)</strong></td>
               <td><audio controls=""><source src="static/audio_sample/demo/music_gen/mucodec/3.flac" type="audio/wav"></audio></td>
             </tr>
           </tbody>
